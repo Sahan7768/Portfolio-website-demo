@@ -1,0 +1,242 @@
+
+/*Import fonts from fonts.css file */
+@import url(./fonts.css);
+/*css variable*/
+@import url(./partials/_variables.css);
+/*Global Styling*/
+@import url(./partials/global.css);
+
+/*start navigation*/
+.navbar-brand{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0 2rem 0 5rem;
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      /* Set gradient background */
+    background: linear-gradient(45deg, #00a8ff, #764ba2);
+    /* Clip background to text */
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Make text transparent to show gradient */
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+
+.nav-item{
+    padding: 0.1rem ;
+}
+
+.nav-link{
+    font:normal 500 15px/2xp var(--roboto);
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/*End navigation*/
+
+
+/*Banner area*/
+.site-banner{
+    background-image: url(/img/background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:local;
+    background-size: cover;
+    background opacity:50%;
+}
+.image-shadow:hover{
+    transform: translatex(-20px) scale(1.03);
+    transition: transform 0.8s ease;
+}
+
+.site-main{
+    background:url(../img/portfolio.png)no-repeat 0% 50%;
+    font-family: 'Times New Roman', Times, serif;
+    /* margin-right: auto; */
+}
+
+.site-title{
+    padding-top: 10%;
+    font-weight: 500;
+}
+.site-title h3:after{
+    content: "";
+    height: 3px;
+    width: 10vw;
+    background: rgb(255, 255, 255);
+    display:flex;
+    margin-left: 10%;
+    transform: translateY(-10px);
+}
+
+.site-title h1{
+    font-size: 6rem;
+}
+.site-title h4{
+    font-size: 1.5rem;
+}
+.banner-image>img{
+    padding: 7rem 0;
+    width: 35rem;
+    padding-top: 10%;
+}
+
+
+/*End banner area*/
+
+/*start about me area*/
+
+/* ===== Modern Image Styling for Portfolio ===== */
+.about-image img {
+    /* Border & Shape */
+    border: 0.5px solid transparent;
+    border-radius: 50px;
+    
+    /* Shadow & Depth */
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+    
+    /* Smooth Transitions */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    
+    /* Ensure Proper Scaling */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Hover Effects */
+.about-image img:hover,.services:hover {
+    transform: translateY(-20px) scale(1.03);
+    box-shadow: 0 15px 40px rgba(0, 168, 255, 0.3);
+    border-color: rgb(0, 170, 255); /* Fallback for non-gradient browsers */
+}
+
+/* Responsive Image Base Styles */
+.img-fluid {
+    max-width: 110%;
+    height: auto;
+    display: block; /* Remove extra space under images */
+}
+
+/* Global Image Reset */
+img {
+    vertical-align: middle;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+/* Box Model Consistency */
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+
+
+.about-area{
+    padding:6rem 5rem;
+}
+
+.about-title h2>span{
+    display: block;
+    font: normal bold 49px/60px ;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 21px;
+
+}
+.paragraph>p{
+    padding: 0rem 0;
+}
+
+
+
+/*End about me area*/
+
+/* Services area*/
+.services-area{
+    padding: 7rem 2rem;
+}
+
+.services-title{
+    padding: 0 14rem;
+}
+
+.services{
+    background: rgba(45, 41, 41, 0.973);
+    padding: 2rem 0;
+    margin: 5rem.5rem;
+
+
+        /* Border & Shape */
+        border: 0.5px solid transparent;
+        border-radius: 20x;
+        
+        /* Shadow & Depth */
+        box-shadow: 0 10px 20px #00aaffc4;
+        
+        /* Smooth Transitions */
+        transition: transform 0.6s ease, box-shadow 0.6s ease, border-color 0.6s ease;
+        
+        /* Ensure Proper Scaling */
+        height:70%;
+        object-fit: cover;
+}
+
+.services:hover{
+    box-shadow: var(--box-shadow);
+}
+
+/*End services are*/
+
+
+/*recent porject*/
+.title-h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.title-h4{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.pic,.pic-flyer,.logo{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+    display: flex;
+    border-radius: 4px;
+}
+.projevt-area{
+    padding: 4rem 0;
+}
+.button-group button{
+    border: none;
+    font: normal 500 16px/20px var(--roboto);
+    text-transform: uppercase;
+}
+.button-group button.active {
+    background: #007bff;
+    color: white;
+}
+.our-project>.title h4{
+    font: normal 700 25px/12px var(--roboto);
+}
+
+
+
+
+
+
+
